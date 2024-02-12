@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+<body class="container pt-2">
+
+    <div class=" border border-primary">
+        <div class="bg-primary text-white text-right py-2 px-6">Listado de Usuarios</div>
+        <div class="row py-4">
+            <form action="" class="col-md-6">
+                <div class="form-group row">
+                    <label for="desde-id" class="offset-md-4 col-sm-2 col-form-label">Desde ID</label>
+                    <input type="text" id="desde-id" placeholder="Desde ID" class="form-control col-md-5">
+                </div>
+                <div class="form-group row">
+
+                    <label for="hasta-id" class="offset-md-4 col-sm-2 col-form-label">Hasta ID</label>
+                    <input type="text" id="hasta-id" placeholder="Hasta ID" class="form-control col-md-5">
+                </div>
+                <div class="form-group row">
+
+                    <label for="arhivo" class="offset-md-4 col-sm-2 col-form-label">Imagen</label>
+                    <input type="file" id="arhivo" placeholder="Hasta ID" class="form-control col-md-5 bg-primary text-white">
+                </div>
+            </form>
+        </div>
+        <div class="row bg-footer border-top">
+
+            <div class="col-md-6 offset-md-6 text-right py-2 pr-4">
+                <button class="btn btn-primary">Previsualizar Datos</button>
+                <button class="btn btn-primary">Exportar Excel</button>
+                <button class="btn btn-primary">Exportar PDF</button>
+                <button class="btn btn-primary" disabled>Salir</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

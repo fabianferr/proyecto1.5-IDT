@@ -1,0 +1,51 @@
+body{
+    background-color: grey;
+}
+
+img{
+    width: 200px;
+    transition: all 1.5s;
+}
+
+h1{
+    font-size: 60px;
+    color: crimson;
+    transition: text-shadow 3s, color 2s, background 2s;
+}
+
+h1:hover{
+    text-shadow: 300px 0px 0px blue;
+    color: gold;
+    background: black;
+}
+
+img:active{
+    transform: scale(1.2);
+}
+
+h1:hover + picture img{
+    filter: drop-shadow(0 0 30px gold);
+}
+
+h1:hover + picture::after{
+    color: black;
+}
+
+picture::after{
+    content: "Goku";
+    font-size: 48px;
+    color: grey;
+}
+
+input:focus{
+    padding: 10px 20px;
+    color: darkgreen;
+}
+
+.fondo{
+    transition: all 2s;
+}
+
+input:focus ~ .fondo{
+    background-color: black;
+}
